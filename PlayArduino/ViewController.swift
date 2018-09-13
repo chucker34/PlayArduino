@@ -16,6 +16,11 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
     var characteristic: CBCharacteristic!
     var centralManagerReady: Bool = false
     var peripheralReady: Bool = false
+    
+    @IBOutlet weak var BLESSIDLabel: UILabel!
+    @IBOutlet weak var send1Button: UIButton!
+    @IBOutlet weak var send2Button: UIButton!
+    @IBOutlet weak var connectButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
