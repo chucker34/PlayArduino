@@ -33,14 +33,23 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQH-Rn-rHI">
                                         <rect key="frame" x="0.0" y="0.0" width="61" height="30"/>
                                         <state key="normal" title="Send &quot;1&quot;"/>
+                                        <connections>
+                                            <action selector="handleSend1ButtonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2XB-h6-O2L"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zww-dX-HH3">
                                         <rect key="frame" x="0.0" y="30" width="61" height="30"/>
                                         <state key="normal" title="Send &quot;2&quot;"/>
+                                        <connections>
+                                            <action selector="handleSend2ButtonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JGi-Hh-gmE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1w-ZH-KKc">
                                         <rect key="frame" x="0.0" y="60" width="61" height="30"/>
                                         <state key="normal" title="Connect"/>
+                                        <connections>
+                                            <action selector="handleConnectButtonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5b1-Bt-zGI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -57,9 +66,6 @@
                     </view>
                     <connections>
                         <outlet property="BLESSIDLabel" destination="Aod-iF-4Yl" id="CZi-VU-Wb7"/>
-                        <outlet property="connectButton" destination="L1w-ZH-KKc" id="qKl-4Z-beF"/>
-                        <outlet property="send1Button" destination="lQH-Rn-rHI" id="8LQ-Sp-stI"/>
-                        <outlet property="send2Button" destination="Zww-dX-HH3" id="0yk-fv-zqJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
